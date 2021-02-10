@@ -2,6 +2,6 @@
 import { useLocalStorage } from './useLocalStorage'
 
 export const useDarkMode = () => {
-    const [darkMode, setDarkMode] = useLocalStorage('dark');
+    const [darkMode, setDarkMode] = useLocalStorage('dark', false);
     return [darkMode, setDarkMode];
 };
